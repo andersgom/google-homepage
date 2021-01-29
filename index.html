@@ -22,17 +22,21 @@
     align-items: center;
   }
   .mainbarbox{
-    width: 100%;
-    background: none;
-    padding: 30px;
+    position: center;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 50%;
+    max-width: 500px;
+    min-width: 400px;
+    margin-top: 20px;
+    border: 1px solid #cecece;
+    border-radius: 60px;
+    padding: 5px 8px 0 16px;
   }
-  /* Intenta hacer una sola caja con la lupa y la barra */
-  /* Añade :hover */
   .mbbicon{
     background: none;
-    margin-top: 9px;
+    margin-top: 0px;
     width: 20px;
     height: 20px;
   }
@@ -40,12 +44,31 @@
     padding: 9px;
     width: 350px;
     border-width: 1px;
-    border-color:rgb(109, 109, 109);
-    border-style: solid;
-    border-radius: 60px;
+    border-color:none;
+    border-style:none;
+  }
+  .mainbuttons{
+    width: 155px;
+    font-size: 14px;
+    line-height: 27px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius:4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    height:36px;
+    cursor:pointer;
+  }
+  .mainsubmit{
+    background: none;
+    margin-top: 30px;
+    width: 320px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
   }
   .footer {
-    background: whitesmoke;
+    background: rgb(230, 230, 230);
     width:100%;
     padding: 10px;
     display: flex;
@@ -60,7 +83,7 @@
     flex-direction: column;
     align-items: center;
   }
-  /* Añade los media query al terminar */
+  /* Añade :hover y los media query al terminar */
         </style>
     </head>
     <body>
@@ -70,6 +93,8 @@
             <div class="header">
               <a href="#">Gmail</a>
               <a href="#">Images</a>
+              <!-- Añade icono en apps -->
+              <a href="#">apps</a>
               <a href="#">Sign in</a>
             </div>
             <!-- Main -->
@@ -78,17 +103,17 @@
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
               </div>
               <form class=mainbarbox>
-                <!-- Trabaja en la barra, añade img de lupa -->
                 <img class="mbbicon" src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png">
                 <input class="mainbar" type="text">
               </form>
-              <!-- Da forma a los botones -->
               <div class="mainsubmit">
-                <button class="mainsubmit-search" type="submit">Google search</button>
-                <button class="mainsubmit-luck"type="submit">I'm feeling Lucky</button>
+                <button class="mainbuttons" type="submit">Google search</button>
+                <button class="mainbuttons"type="submit">I'm feeling Lucky</button>
               </div>
             </div>
+            <!-- Footer -->
             <div class="footer">
+              <!-- Añade una clase para los botones -->
                 <div>
                     <a href="#">Advertising</a>
                     <a href="#">Bussiness</a>
